@@ -26,11 +26,11 @@ $(window).on("load", () => {
         return now
     }
 
-    const sundayDt = nextDay().toLocaleDateString("en-GB", {
+    const sundayDate = nextDay().toLocaleDateString("en-GB", {
         year: "numeric",
         month: "numeric",
         day: "numeric"
     })
 
-    $("#date").text(sundayDt)
+    $("#date").text(sundayDate)
 })
