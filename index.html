@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HRCT</title>
+    <link rel="icon" href="content/top.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="/script.js"></script>
+</head>
+
+<video autoplay muted loop playsinline id="video" onclick="cpsCount()">
+    <source id="vid-source" type="video/mp4" />
+</video>
+
+<body class="preload">
+
+    <script>
+        // if (!detectMob()) {
+        const player = document.getElementById("video")
+
+        const vid = randomVideo()
+
+        document.getElementById("vid-source").src = vid
+
+        player.load()
+        player.play()
+        // }
+    </script>
+
+
+    <main>
+        <p class="hero">Hardwick RC Track</p>
+        <p class="sub-hero">1/5th and 1/8th scale</p>
+
+        <p class="desc">Open every Sunday 9:00AM-4:30PM</p>
+
+        <a href="./book/" class="book-in">book in here</a>
+
+        <!-- <span class="fake-link link discord" id="discord" onclick="copyDiscord();">max#0777</span>
+
+        <div class="countdown">
+            <p class="countdown-text">boobies</p>
+        </div>
+
+        <div class="bottom">
+            <a href="https://instagram.com/xdtekoh" class="link">instagram</a>
+            <a href="https://snapchat.com/add/xdtekoh" class="link">snapchat</a>
+            wtf u doing here stop looking go away
+        </div> -->
+    </main>
+</body>
+
+</html>
