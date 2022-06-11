@@ -253,4 +253,17 @@ main > a {
     .card a {
         font-size: 5rem;
     }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .images img {
+        max-width: 50rem;
+        margin: 3rem;
+    }
 }
