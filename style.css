@@ -8,7 +8,7 @@
     text-decoration: none;
     margin: 0rem;
     padding: 0rem;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -22,26 +22,12 @@
     display: none !important;
 }
 
-html {
-    background-color: #0e0e0e;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 body {
-    background-color: var(--bg-color);
-    min-height: 100%;
-    min-width: 100%;
-    padding-bottom: 70vh;
+    overflow-x: hidden;
     background-image: url("content/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
@@ -92,6 +78,8 @@ main > a {
     background-image: url("content/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
 }
 
 .desktop {
@@ -121,6 +109,41 @@ main > a {
     transform: translate(-50%, -600%);
 }
 
+.images-container {
+    margin-top: 20%;
+    display: flex;
+    z-index: 69;
+    position: relative;
+}
+
+.left {
+    order: 1;
+    flex: 1;
+}
+
+.right {
+    order: 3;
+    flex: 1;
+}
+
+.images {
+    order: 2;
+    flex: 5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: flex-start;
+
+    padding: 2rem;
+}
+
+.images img {
+    max-width: 25rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
 .card-container {
     display: flex;
     justify-content: space-evenly;
@@ -131,7 +154,8 @@ main > a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .card {

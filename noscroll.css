@@ -1,0 +1,11 @@
+html {
+    background-color: #0e0e0e;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
