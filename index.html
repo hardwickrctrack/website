@@ -9,7 +9,7 @@
     <script src="/script.js"></script>
 </head>
 
-<video autoplay muted loop playsinline id="video" onclick="cpsCount()">
+<video autoplay muted loop playsinline id="video">
     <source id="vid-source" type="video/mp4" />
 </video>
 
@@ -19,9 +19,7 @@
         // if (!detectMob()) {
         const player = document.getElementById("video")
 
-        const vid = randomVideo()
-
-        document.getElementById("vid-source").src = vid
+        document.getElementById("vid-source").src = "content/vid.mp4"
 
         player.load()
         player.play()

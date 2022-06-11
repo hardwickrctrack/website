@@ -9,7 +9,7 @@
     <script src="/script.js"></script>
 </head>
 
-<video autoplay muted loop playsinline id="video" onclick="cpsCount()">
+<video autoplay muted loop playsinline id="video">
     <source id="vid-source" type="video/mp4" />
 </video>
 
@@ -19,9 +19,7 @@
         // if (!detectMob()) {
         const player = document.getElementById("video")
 
-        const vid = randomVideo()
-
-        document.getElementById("vid-source").src = vid
+        document.getElementById("vid-source").src = "../content/vid.mp4"
 
         player.load()
         player.play()
@@ -33,7 +31,7 @@
         <p class="hero">HRCT Booking</p>
         <p class="sub-hero">For <span id="date"></span></p>
 
-        <p class="desc">Adults: £10<br>Under 17's: £7</p>
+        <p class="desc">Adults: £11<br>Under 17's: £7</p>
 
         <a href="https://paypal.me/sex" class="book-in">pay here</a>
     </main>
