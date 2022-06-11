@@ -37,6 +37,10 @@ main {
     transform: translate(-50%, -50%);
 }
 
+main > h1 {
+    text-align: center;
+}
+
 main > p, a {
     display: block;
     text-align: center;
@@ -227,6 +231,10 @@ main > a {
 
     main>p {
         font-size: 2rem;
+    }
+
+    main>h1 {
+        font-size: 3rem;
     }
 
     .hero-container {
