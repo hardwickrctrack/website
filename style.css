@@ -30,6 +30,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 main {
@@ -80,13 +81,6 @@ main > a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* background-image: url("content/bg.jpg"); */
-    /* background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     /* z-index: -1; */
 }
 
