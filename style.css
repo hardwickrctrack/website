@@ -188,6 +188,11 @@ main > a {
     min-height: 13rem;
 }
 
+.card:hover {
+    background-color: #1d1d1d3d;
+    border: solid 1px rgba(255, 255, 255, 0.2)
+}
+
 .card h1 {
     margin: 1rem;
 }
