@@ -40,3 +40,21 @@ function payNow() {
     if (!$("#terms-box").is(":checked")) return
     window.location.href = "https://www.paypal.com/paypalme/HRCTRCTRACK"
 }
+
+function spawnRules() {
+    $(".rules").addClass("fade-in")
+    $(".rules").css("display", "block")
+
+    setTimeout(() => {
+        $(".rules").removeClass("fade-in")
+    }, 500)
+}
+
+function closeRules() {
+    $(".rules").addClass("fade-out")
+
+    setTimeout(() => {
+        $(".rules").css("display", "none")
+        $(".rules").removeClass("fade-out")
+    }, 300);
+}
