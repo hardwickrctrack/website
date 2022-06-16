@@ -1,4 +1,5 @@
 let copyNotificationShowing = false
+const backgrounds = ["img_(4).jpg", "img_(8).jpg", "img_(13).jpg", "img_(26).jpg", "img_(70).jpg", "img_(89).jpg", "img_(99).jpg", "img_(101).jpg", "img_(119).jpg", "img_(134).jpg", "img_(144).jpg"]
 
 function detectMob() {
     let check = false;
@@ -7,6 +8,9 @@ function detectMob() {
 }
 
 $(window).on("load", () => {
+    const image = backgrounds[Math.floor(Math.random() * backgrounds.length)]
+    $("body").css("background-image", `url("/content/imgs/${image}")`)
+    $("#video").css("background-image", `url("/content/imgs/${image}")`)
     $("body").removeClass("preload")
 
     if (!detectMob()) {
