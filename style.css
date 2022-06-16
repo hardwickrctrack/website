@@ -171,7 +171,7 @@ main > a {
     max-height: 20%;
     white-space: nowrap;
     animation: fade-in 1.5s ease-in;
-    padding: 0.75rem;
+    padding: 1rem;
     margin: 2rem;
     text-align: center;
     color: white;
@@ -181,6 +181,7 @@ main > a {
     justify-content: center;
 
     min-width: 15rem;
+    max-width: 20rem;
     min-height: 15rem;
     word-wrap: break-word;
 }
@@ -191,13 +192,51 @@ main > a {
 
 .card p {
     font-size: 1.5rem;
+    white-space: normal;
 }
 
-.card a {
+.card-link {
     text-decoration: underline;
     margin: 0.5rem;
     font-size: 2rem;
     color: aquamarine;
+}
+
+#pay-now {
+    display: inline;
+    background-color: #3263b6;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    border: rgba(255, 255, 255, 0) 1px solid;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    margin: 1rem;
+    cursor: not-allowed;
+}
+
+.terms-link {
+    display: inline;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.booking-header {
+    margin-bottom: 0 !important;
+}
+
+.booking-date {
+    font-size: 1.2rem !important;
+}
+
+.booking-desc {
+    margin-top: 0.5rem !important;
+    font-size: 1.5rem !important;
+}
+
+.booking-note {
+    font-size: 1rem !important;
+    white-space: normal;
 }
 
 @keyframes fade-in {
@@ -247,7 +286,8 @@ main > a {
     }
 
     .card {
-        min-width: 90%;
+        max-width: none;
+        width: 90%;
     }
 
     .card h1 {

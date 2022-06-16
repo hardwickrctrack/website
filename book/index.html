@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HRCT Booking</title>
+    <link rel="icon" href="../content/top.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="/script.js"></script>
+</head>
+
+<video autoplay muted loop playsinline id="video">
+    <source id="vid-source" type="video/mp4" />
+</video>
+
+<body class="preload">
+
+    <div class="hero-container">
+        <h1 class="hero">Hardwick RC Track</h1>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-c">
+                <h1 class="booking-header">Booking</h1>
+                
+                <p class="booking-date">For <span id="date"></span></p>
+
+                <p class="booking-desc">Adults: £11<br>Under 17's: £7</p>
+
+                <br>
+
+                <p class="booking-note">Note: Upon arrival you must still check-in to receive your wristband</p>
+
+                <br>
+
+                <input type="checkbox" name="terms" id="terms-box" onchange="activateButton(this)"> I agree to the <a href="#" class="terms-link">HRCT track use rules</a>
+                <br>
+                <input type="submit" value="Pay now" id="pay-now" onclick="payNow()">
+                <!-- <button id="pay-now">Pay now</button> -->
+                
+                <!-- <a href="https://www.paypal.com/paypalme/HRCTRCTRACK" class="book-in">pay here</a> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -27,3 +27,16 @@ $(window).on("load", () => {
 
     $("#date").text(sundayDate)
 })
+
+function activateButton(element) {
+    if (element.checked) {
+        $("#pay-now").css("cursor", "pointer")
+    } else {
+        $("#pay-now").css("cursor", "not-allowed")
+    }
+}
+
+function payNow() {
+    if (!$("#terms-box").is(":checked")) return
+    window.location.href = "https://www.paypal.com/paypalme/HRCTRCTRACK"
+}
