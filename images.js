@@ -1,7 +1,7 @@
 const images = []
 
 for (let i = 1; i < 144; i++) {
-    const image = `/content/imgs/img (${i}).jpg`
+    const image = `/content/imgs/img_(${i}).jpg`
     images.push(image)
 }
 
