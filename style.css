@@ -25,8 +25,8 @@
 body {
     overflow-x: hidden;
     /* background-image: url("content/bg.jpg"); */
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -82,8 +82,8 @@ main > a {
     transform: translate(-50%, -50%);
 
     /* background-image: url("content/bg.jpg"); */
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -337,14 +337,17 @@ main > a {
     .card-container {
         width: 100%;
         margin-top: 2rem;
+        padding: 0rem;
     }
 
     .card {
-        max-width: none;
+        max-width: 100%;
         width: 90%;
         white-space: normal;
         max-height: 100%;
         padding: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .card h1, .booking-header {
