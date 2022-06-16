@@ -404,14 +404,18 @@ main > a {
     }
 
     .rules h1 {
-        font-size: 6rem;
-    }
-
-    .rules h2 {
         font-size: 4rem;
     }
 
+    .rules h2 {
+        font-size: 3rem;
+    }
+
+    .rules li {
+        font-size: 1.5rem;
+    }
+
     .rules p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
