@@ -129,7 +129,7 @@ main > a {
     flex: 1;
 }
 
-.images {
+.images, .videos {
     order: 2;
     flex: 5;
     display: flex;
@@ -143,6 +143,12 @@ main > a {
 
 .images img {
     max-width: 25rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.videos video {
+    max-width: 30rem;
     margin: 1rem;
     border-radius: 0.5rem;
 }
@@ -383,7 +389,7 @@ main > a {
     }
 
     .card-link {
-        font-size: 5rem;
+        font-size: 5rem !important;
     }
 
     .social-link {
@@ -399,6 +405,11 @@ main > a {
     }
 
     .images img {
+        max-width: 50rem;
+        margin: 3rem;
+    }
+
+    .videos video {
         max-width: 50rem;
         margin: 3rem;
     }

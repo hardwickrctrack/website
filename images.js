@@ -1,18 +1,18 @@
-const images = []
+const videos = []
 
 for (let i = 1; i < 144; i++) {
     const image = `/content/imgs/img_(${i}).jpg`
-    images.push(image)
+    videos.push(image)
 }
 
-console.log(images.length + "length")
+console.log(videos.length + "length")
 
-while (images.length != 0) {
-    const image = images[Math.floor(Math.random() * images.length)]
+while (videos.length != 0) {
+    const image = videos[Math.floor(Math.random() * videos.length)]
 
-    images.splice(images.indexOf(image), 1)
+    videos.splice(videos.indexOf(image), 1)
 
-    console.log(images.length)
+    console.log(videos.length)
 
     $(".images").append(`<img loading="lazy" src="${image}">`)
 }
