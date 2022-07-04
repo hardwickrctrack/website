@@ -9,8 +9,8 @@ function detectMob() {
 
 $(window).on("load", () => {
     const image = backgrounds[Math.floor(Math.random() * backgrounds.length)]
-    $("body").css("background-image", `url("/content/imgs/${image}")`)
-    $("#video").css("background-image", `url("/content/imgs/${image}")`)
+    $("body").css("background-image", `url("/content/imgs/undated/${image}")`)
+    $("#video").css("background-image", `url("/content/imgs/undated/${image}")`)
     $("body").removeClass("preload")
 
     if (!detectMob()) {
