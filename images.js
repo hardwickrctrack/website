@@ -1,18 +1,32 @@
-const videos = []
+let path = "/content/imgs/"
 
-for (let i = 1; i < 144; i++) {
-    const image = `/content/imgs/img_(${i}).jpg`
-    videos.push(image)
+const amounts = {
+    "undated": 144,
+    "03.07.22": 421,
+    "26.06.22": 155
 }
 
-console.log(videos.length + "length")
+if (window.location.hash === "#undated") {
+    path += "undated"
+} else {
+    path += window.location.hash.substring(1, window.location.hash.length)
+}
 
-while (videos.length != 0) {
-    const image = videos[Math.floor(Math.random() * videos.length)]
+console.log(path)
 
-    videos.splice(videos.indexOf(image), 1)
+const images = []
 
-    console.log(videos.length)
+for (let i = 1; i < amounts[window.location.hash.substring(1, window.location.hash.length)]; i++) {
+    const image = `${path}/img_(${i}).jpg`
+    images.push(image)
+}
+
+console.log(images.length + "length")
+
+while (images.length != 0) {
+    const image = images[Math.floor(Math.random() * images.length)]
+
+    images.splice(images.indexOf(image), 1)
 
     $(".images").append(`<img loading="lazy" src="${image}">`)
 }
