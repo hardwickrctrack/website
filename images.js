@@ -17,7 +17,7 @@ console.log(path)
 const images = []
 
 for (let i = 1; i < amounts[window.location.hash.substring(1, window.location.hash.length)]; i++) {
-    const image = `${path}/img_(${i}).jpg`
+    const image = `${path}/img_(${i}).webp`
     images.push(image)
 }
 

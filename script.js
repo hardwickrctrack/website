@@ -1,5 +1,5 @@
 let copyNotificationShowing = false
-const backgrounds = ["img_(4).jpg", "img_(8).jpg", "img_(13).jpg", "img_(26).jpg", "img_(70).jpg", "img_(89).jpg", "img_(99).jpg", "img_(101).jpg", "img_(119).jpg", "img_(134).jpg", "img_(144).jpg"]
+const backgrounds = ["img_(4).webp", "img_(8).webp", "img_(13).webp", "img_(26).webp", "img_(70).webp", "img_(89).webp", "img_(99).webp", "img_(101).webp", "img_(119).webp", "img_(134).webp", "img_(144).webp"]
 
 function detectMob() {
     let check = false;
