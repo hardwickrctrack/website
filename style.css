@@ -109,8 +109,9 @@ main > a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -600%);
+    transform: translate(-50%, -790%);
 }
+
 
 .images-container {
     margin-top: 20%;
@@ -160,7 +161,7 @@ main > a {
     flex-flow: wrap;
     align-items: flex-start;
 
-    margin-top: 17%;
+    margin-top: 13%;
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -192,6 +193,10 @@ main > a {
     min-width: 12rem;
     max-width: 20rem;
     min-height: 13rem;
+}
+
+.subscriber {
+    max-width: fit-content;
 }
 
 .card:hover {
@@ -296,6 +301,24 @@ main > a {
 
 .fade-out {
     animation: fade-in 0.3s ease-out reverse;
+}
+
+.benefits {
+    padding: 1rem;
+}
+
+.benefits li {
+    margin: 0.5rem;
+}
+
+.payment-notice {
+    font-size: 1rem !important;
+    color: rgb(255, 51, 51);
+}
+
+.subscriber-cost {
+    font-size: 1rem !important;
+    margin-top: -1rem;
 }
 
 @keyframes fade-in {
@@ -435,5 +458,24 @@ main > a {
 
     .rules p {
         font-size: 1rem;
+    }
+
+    .benefits {
+        padding: 1rem;
+    }
+    
+    .benefits li {
+        margin: 1.25rem;
+        font-size: 2.5rem;
+    }
+    
+    .payment-notice {
+        font-size: 2rem !important;
+        color: rgb(255, 51, 51);
+    }
+    
+    .subscriber-cost {
+        font-size: 2rem !important;
+        margin-top: -1rem;
     }
 }
