@@ -33,6 +33,10 @@ body {
     background-position: center;
 }
 
+.summerbg {
+    background-image: url("./content/imgs/summer_championship.webp");
+}
+
 main {
     position: absolute;
     left: 50%;

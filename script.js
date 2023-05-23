@@ -10,6 +10,7 @@ function detectMob() {
 $(window).on("load", () => {
     const image = backgrounds[Math.floor(Math.random() * backgrounds.length)]
     $("body").css("background-image", `url("/content/imgs/undated/${image}")`)
+    $(".summerbg").css("background-image", 'url("/content/imgs/summer_championship.webp")')
     $("#video").css("background-image", `url("/content/imgs/undated/${image}")`)
     $("body").removeClass("preload")
 
