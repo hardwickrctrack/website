@@ -134,16 +134,17 @@ main > a {
     flex: 1;
 }
 
-.images, .videos {
+.images {
     order: 2;
     flex: 5;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-flow: wrap;
-    align-items: flex-start;
-
     padding: 2rem;
+    justify-content: center;
+}
+
+.images-left, .images-right {
+    display: flex;
+    flex-direction: column;
 }
 
 .images img {

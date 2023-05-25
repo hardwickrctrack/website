@@ -23,10 +23,12 @@ for (let i = 1; i < amounts[window.location.hash.substring(1, window.location.ha
 
 console.log(images.length + "length")
 
+let count = 1;
 while (images.length != 0) {
     const image = images[Math.floor(Math.random() * images.length)]
 
-    images.splice(images.indexOf(image), 1)
+    images.splice(images.indexOf(image), 1);
 
-    $(".images").append(`<img loading="lazy" src="${image}">`)
+    (count % 2 == 0 ? $(".images-left") : $(".images-right")).append(`<img loading="lazy" src="${image}">`)
+    count++
 }
