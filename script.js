@@ -1,5 +1,5 @@
 let copyNotificationShowing = false
-const backgrounds = ["img_(4).webp", "img_(8).webp", "img_(13).webp", "img_(26).webp", "img_(70).webp", "img_(89).webp", "img_(99).webp", "img_(101).webp", "img_(119).webp", "img_(134).webp", "img_(144).webp"]
+const backgrounds = ["img_(4).jpeg", "img_(8).jpeg", "img_(13).jpeg", "img_(26).jpeg", "img_(70).jpeg", "img_(89).jpeg", "img_(99).jpeg", "img_(101).jpeg", "img_(119).jpeg", "img_(134).jpeg", "img_(144).jpeg"]
 
 function detectMob() {
     let check = false;
@@ -10,7 +10,7 @@ function detectMob() {
 $(window).on("load", () => {
     const image = backgrounds[Math.floor(Math.random() * backgrounds.length)]
     $("body").css("background-image", `url("/content/imgs/undated/${image}")`)
-    $(".summerbg").css("background-image", 'url("/content/imgs/summer_championship.webp")')
+    $(".summerbg").css("background-image", 'url("/content/imgs/summer_championship.jpeg")')
     $("#video").css("background-image", `url("/content/imgs/undated/${image}")`)
     $("body").removeClass("preload")
 
